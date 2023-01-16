@@ -1,0 +1,387 @@
+.adress {
+	margin: 0px 10px 0px 0px;
+	height: 100%;
+
+	@media (max-width:($md1+px)) {
+		height: auto;
+		margin: 0;
+	}
+
+	// .adress__link
+
+	&__link {
+		font-size: 13px;
+		line-height: 100%;
+		color: $light-00;
+		display: flex;
+		align-items: center;
+		height: 100%;
+		@extend%hover;
+
+		@media (max-width:($md1+px)) {
+			height: auto;
+			padding: 8.5px 0;
+			display: inline-flex;
+		}
+
+		@media (any-hover:hover) {
+			&:hover {
+				&::before {
+					opacity: 1;
+				}
+
+				.adress__label {
+					&::before {
+						opacity: 1;
+					}
+				}
+			}
+		}
+	}
+
+	// .adress__label
+
+	&__label {
+		position: relative;
+
+		&::before {
+			content: '';
+			width: 100%;
+			position: absolute;
+			height: 1px;
+			background-color: $coyot-light;
+			left: 0;
+			bottom: -3px;
+			opacity: 0;
+			transition: opacity 0.3s ease-out 0s;
+		}
+	}
+
+	.ic-marker {
+		font-size: 14px;
+		color: $coyote;
+		margin: 0px 0px 0px 5px;
+
+		&::before {
+			font-size: 14px;
+		}
+	}
+
+}
+
+.phone {
+	position: relative;
+	margin: 0px 10px 0px 0px;
+
+	@media (any-hover:hover) {
+		&:hover {
+			.phone__top {
+				border-color: $special-gray-02;
+			}
+
+			.phone__body {
+				visibility: visible;
+				opacity: 1;
+				pointer-events: auto;
+			}
+		}
+	}
+
+	// .phone__top
+
+	&__top {
+		border: 1px solid transparent;
+		border-bottom: 0px;
+		transition: border-color 0.3s ease-out 0s;
+	}
+
+	// .phone__link
+
+	&__link {
+		font-size: 13px;
+		line-height: 100%;
+		color: $light-01;
+		display: flex;
+		align-items: center;
+		padding: 5px 10px;
+		white-space: nowrap;
+		@extend%hover;
+
+		@media (max-width:($md1+px)) {
+			padding: 10px 0;
+			font-size: 14px;
+		}
+
+		span {
+			margin: 0px 7px 0px 0px;
+			width: 24px;
+			height: 24px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border-radius: 50%;
+			color: $white;
+
+			&::before {
+				font-size: 14px;
+			}
+		}
+
+		// .phone__link_top-gray
+
+		&_top-gray {
+			padding: 9px 5px;
+			color: $light-00;
+
+			@media (any-hover:hover) {
+				&:hover {
+					color: $light-00;
+				}
+			}
+
+			span {
+				width: 14px;
+				height: 14px;
+				margin: 0px 0px 0px 5px;
+				color: #7B7B7B;
+				background-color: transparent;
+				border-radius: none;
+			}
+		}
+
+		// .phone__link_blue
+
+		&_blue {
+			span {
+				background: #00A0FF;
+			}
+		}
+
+		// .phone__link_red
+
+		&_red {
+			span {
+				background: #E60000;
+			}
+		}
+
+		// .phone__link_yellow
+
+		&_yellow {
+			span {
+				background: #E0B787;
+			}
+		}
+
+		// .phone__link_purple
+
+		&_purple {
+			span {
+				background: #7F4DA0;
+			}
+		}
+
+		// .phone__link_lite-blue
+
+		&_lite-blue {
+			span {
+				background: #37AEE2;
+			}
+		}
+
+	}
+
+	// .phone__body
+
+	&__body {
+		position: absolute;
+		left: 0;
+		top: 100%;
+		background-color: $special-gray-01;
+		padding: 10px 0;
+		border: 1px solid $special-gray-02;
+		border-top: 0px;
+		transition: all 0.4s ease-out 0s;
+		visibility: hidden;
+		pointer-events: none;
+		opacity: 0;
+		z-index: 2;
+
+		@media (max-width:($md1+px)) {
+			pointer-events: auto;
+			visibility: visible;
+			opacity: 1;
+			position: static;
+			background-color: transparent;
+			border: none;
+		}
+	}
+
+	// .phone__list
+
+	&__list {}
+
+	// .phone__item
+
+	&__item {}
+}
+
+.soc {
+	display: flex;
+	margin: 0px 10px 0px 0px;
+
+	@media (max-width:($md1+px)) {
+		margin: 0;
+	}
+
+	// .social__link
+
+	&__link {
+		font-size: 24px;
+		color: $light-01;
+		transition: color 0.3s ease-out 0s;
+
+		@media (any-hover:hover) {
+			&:hover {
+				color: $light-02;
+			}
+		}
+	}
+}
+
+.currency {
+	display: flex;
+	align-items: center;
+	margin: 0px 10px 0px 0px;
+
+	// .currency__dropdown
+
+	&__dropdown {
+		position: relative;
+		flex: 0 0 65px;
+		width: 65px;
+	}
+
+	// .currency__header
+
+	&__header {
+		background: $special-gray-01;
+	}
+
+	// .currency__label
+
+	&__label {
+		color: $light-00;
+		font-size: 13px;
+		line-height: 100%;
+		margin: 0px 5px 0px 0px;
+	}
+
+	// .currency__button
+
+	&__button {
+		padding: 10px 20px 10px 10px;
+		border: 1px solid $special-gray-01;
+		border-bottom: 0;
+		border-top: 0;
+		font-size: 13px;
+		line-height: 100%;
+		color: $light-01;
+		text-transform: uppercase;
+		transition: color 0.3s ease-out 0s;
+		width: 100%;
+		position: relative;
+		z-index: 2;
+		text-align: left;
+
+		@media (any-hover:hover) {
+			&:hover {
+				color: $light-00;
+			}
+		}
+
+		&.active {
+			border-color: #363636;
+			color: $coyot-light;
+		}
+
+		&.selected {
+			color: $coyot-light;
+		}
+
+		&::before {
+			font-size: 14px;
+			position: absolute;
+			right: 5px;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+	}
+
+	// .currency__body
+
+	&__body {
+		position: absolute;
+		top: 100%;
+		left: 0;
+		opacity: 1;
+		pointer-events: none;
+		transition: all 0.3s ease-out 0s;
+		background: $special-gray-01;
+		border: 1px solid $special-gray-02;
+		border-top: 0;
+		width: 100%;
+		transform: translateY(-101%);
+		z-index: 1;
+
+		&.visible {
+			opacity: 1;
+			pointer-events: auto;
+			transform: translateY(0);
+		}
+	}
+
+	// .currency__item
+
+	&__item {
+		display: block;
+		cursor: pointer;
+		font-size: 13px;
+		line-height: 100%;
+		text-transform: uppercase;
+		color: $light-00;
+		padding: 10px 20px 10px 10px;
+
+		&.not-visible {
+			display: none;
+		}
+	}
+}
+
+.lang {
+	display: flex;
+	// .lang__link
+
+	&__link {
+		padding: 10px 5px;
+		font-size: 13px;
+		line-height: 100%;
+		text-transform: uppercase;
+		color: $light-01;
+		transition: color 0.3s ease-out 0s;
+
+		&:not(:last-child) {
+			margin: 0px 5px 0px 0px;
+		}
+
+		@media (any-hover:hover) {
+			&:hover {
+				color: $gray-light-00;
+			}
+		}
+
+		&.active {
+			color: $coyot-light;
+		}
+	}
+}

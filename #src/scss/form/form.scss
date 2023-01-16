@@ -1,0 +1,35 @@
+.form-email {
+
+	&__line {
+		display: flex;
+	}
+
+	&__line {
+		position: relative;
+
+		&:not(:last-child) {
+			margin: 0px 0px 30px 0px;
+		}
+	}
+
+	&__assistive {
+		font-size: 14px;
+		line-height: 16px;
+		letter-spacing: 0.4px;
+		margin: 0px 0px 0px 8px;
+	}
+
+	.form-error {
+		font-size: 12px;
+		line-height: 120%;
+		color: $error-on-dark;
+		position: absolute;
+		top: 100%;
+		padding: 3px 0px 0px 0px;
+		left: 0;
+	}
+
+	&__button {
+		margin: 0px 0px 0px 2px;
+	}
+}

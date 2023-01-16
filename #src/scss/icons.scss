@@ -1,0 +1,146 @@
+%ic {
+	font-family: "icons";
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+[class^="ic-"],
+[class*="ic-"] {
+	&:before {
+		@extend %ic;
+		display: block;
+	}
+}
+
+.ic-arrow:before {
+	content: "\e900";
+}
+
+.ic-arrow-long:before {
+	content: "\e901";
+}
+
+.ic-arrow-small:before {
+	content: "\e902";
+}
+
+.ic-bell:before {
+	content: "\e903";
+}
+
+.ic-btn:before {
+	content: "\e904";
+}
+
+.ic-burger:before {
+	content: "\e905";
+}
+
+.ic-cart:before {
+	content: "\e906";
+}
+
+.ic-check:before {
+	content: "\e907";
+}
+
+.ic-check-large:before {
+	content: "\e908";
+}
+
+.ic-cloze:before {
+	content: "\e909";
+}
+
+.ic-facebook:before {
+	content: "\e90a";
+}
+
+.ic-favorit:before {
+	content: "\e90b";
+}
+
+.ic-favorit-black:before {
+	content: "\e90c";
+}
+
+.ic-instagram:before {
+	content: "\e90d";
+}
+
+.ic-kyivstar:before {
+	content: "\e90e";
+}
+
+.ic-link:before {
+	content: "\e90f";
+}
+
+.ic-marker:before {
+	content: "\e910";
+}
+
+.ic-owl:before {
+	content: "\e911";
+}
+
+.ic-phone:before {
+	content: "\e912";
+}
+
+.ic-reload:before {
+	content: "\e913";
+}
+
+.ic-search:before {
+	content: "\e914";
+}
+
+.ic-star-1:before {
+	content: "\e915";
+}
+
+.ic-star-2:before {
+	content: "\e916";
+}
+
+.ic-telegram:before {
+	content: "\e917";
+}
+
+.ic-triangle:before {
+	content: "\e918";
+}
+
+.ic-twitter:before {
+	content: "\e919";
+}
+
+.ic-user:before {
+	content: "\e91a";
+}
+
+.ic-user-2:before {
+	content: "\e91b";
+}
+
+.ic-viber:before {
+	content: "\e91c";
+}
+
+.ic-vodafone:before {
+	content: "\e91d";
+}
+
+.ic-arrow-bold:before {
+	content: "\e91f";
+}
+
+.ic-filter:before {
+	content: "\e91e";
+}

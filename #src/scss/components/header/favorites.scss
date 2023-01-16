@@ -1,0 +1,29 @@
+.favorites {
+	flex: 0 0 24px;
+	height: 100%;
+
+	@media (any-hover:hover) {
+		&:hover {
+			.favorites__link {
+				color: $coyot-light;
+				background-color: $special-gray-01;
+			}
+		}
+	}
+
+	// .favorites__link
+
+	&__link {
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 0 10px;
+		color: $light-04;
+		transition: color 0.3s ease-out 0s, background-color 0.3s ease-out 0s;
+
+		&::before {
+			font-size: 24px;
+		}
+	}
+}

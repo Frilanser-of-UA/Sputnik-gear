@@ -1,0 +1,191 @@
+// FIX ================== Слайдер для баннера===========
+.slider-banner {
+
+	// .slider-banner__slide
+
+	&__slide {
+		width: 100%;
+	}
+
+	// .slider-banner__img
+
+	&__img {
+		height: 350px;
+		max-width: 1200px;
+
+		&::before {
+			content: '';
+			position: absolute;
+			background: linear-gradient(0deg, rgba(0, 0, 0, 0.56), rgba(0, 0, 0, 0.56));
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			z-index: 1;
+		}
+
+		img {
+			object-position: 50% 50%;
+		}
+	}
+
+	.flickity-button {
+		&:focus {
+			box-shadow: none;
+		}
+
+		@media (any-hover:hover) {
+			&:hover {
+				background: rgba(0, 0, 0, 0.3);
+			}
+		}
+
+		&:disabled {
+			background: rgba(0, 0, 0, 0.1);
+		}
+	}
+
+	.flickity-prev-next-button {
+		background: rgba(0, 0, 0, 0.2);
+		border-radius: 50%;
+		width: 40px;
+		height: 40px;
+
+		svg {
+			display: none;
+		}
+
+		&::before {
+			content: "\e900";
+			font-family: "icons";
+			font-size: 24px;
+			color: rgba(255, 255, 255, 0.75);
+		}
+
+		&.next {
+			transform: translateY(-50%) rotate(180deg);
+		}
+
+		&.previous {}
+	}
+
+	.flickity-page-dots {
+		bottom: -15px;
+
+		.dot {
+			width: 33px;
+			height: 3px;
+			border-radius: 0;
+			background: rgba(255, 255, 255, 0.25);
+			margin: 0;
+
+			&:not(:last-child) {
+				margin: 0px 2px 0px 0px;
+			}
+
+			&.is-selected {
+				background: #E0B787;
+			}
+		}
+	}
+}
+
+.cards-slider {
+	width: 100%;
+	// .cards-slider__slide
+
+	&__slide {
+		width: 200px;
+
+		@media (max-width:($md1+px)) {
+			width: 187px;
+		}
+
+		@media (max-width:($md2+px)) {
+			width: 177px;
+		}
+
+		@media (max-width:($md3+px)) {
+			width: 170px;
+		}
+
+		@media (max-width:($md4+px)) {
+			width: 151.5px;
+		}
+
+		&:not(:first-child) {
+			.cards-slider__card {
+				border-left: 1px solid $gray-light-01;
+			}
+		}
+	}
+
+	// .cards-slider__card
+
+	&__card {}
+
+	.flickity-viewport {
+		min-width: 0;
+	}
+
+	.flickity-button {
+		&:focus {
+			box-shadow: none;
+		}
+
+		@media (any-hover:hover) {
+			&:hover {
+				background: transparent;
+
+				&::before {
+					color: $gray-light-03;
+				}
+
+			}
+		}
+
+		&:disabled {
+			&::before {
+				color: $gray-light-02;
+			}
+
+			background-color: transparent;
+		}
+	}
+
+	.flickity-prev-next-button {
+		background: transparent;
+		border-radius: 0;
+		width: auto;
+		height: auto;
+		transform: translate(0, 0);
+		top: -38px;
+		right: 30px;
+		left: auto;
+
+		svg {
+			display: none;
+		}
+
+		&::before {
+			content: "\e901";
+			font-family: "icons";
+			font-size: 18px;
+			padding: 4px;
+			color: $gray-dark-01;
+			display: block;
+			transition: color 0.3s ease 0s;
+
+		}
+
+		&.next {
+			right: 0;
+
+			&::before {
+				transform: rotate(-180deg);
+			}
+		}
+
+		&.previous {}
+	}
+}

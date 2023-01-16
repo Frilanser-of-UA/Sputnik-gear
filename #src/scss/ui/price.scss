@@ -1,0 +1,50 @@
+.prices {
+	display: flex;
+	// .prices__sale
+
+	&__sale {
+		margin: 0px 7px 0px 0px;
+		padding: 2px 3px;
+		font-weight: 500;
+		font-size: 12px;
+		line-height: 15px;
+		color: $white;
+		background-color: $emphasis-blue;
+	}
+
+	// .prices__price-old
+
+	&__price-old {
+		margin: 0px 7px 0px 0px;
+		font-size: 14px;
+		line-height: 17px;
+		letter-spacing: -0.02em;
+		text-decoration-line: line-through;
+		color: $light-01;
+	}
+
+	// .prices__price
+
+	&__price {
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 17px;
+		letter-spacing: -0.02em;
+		color: $dark;
+	}
+
+	&_large {
+
+		.prices__sale {}
+
+		.prices__price {
+			font-size: 18px;
+			line-height: 130%;
+		}
+
+		.prices__price-old {
+			line-height: 130%;
+			font-size: 18px;
+		}
+	}
+}

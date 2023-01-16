@@ -1,0 +1,29 @@
+.breadcrumbs {
+
+	// .breadcrumbs__items
+
+	&__items {
+		display: inline-flex;
+	}
+
+	// .breadcrumbs__item
+
+	&__item {
+		font-size: 13px;
+		line-height: 130%;
+		color: $dark;
+
+		&.active {
+			color: #A6A6A6;
+		}
+
+	}
+
+	// .breadcrumbs__slash
+
+	&__slash {
+		padding: 0 3px;
+	}
+
+
+}

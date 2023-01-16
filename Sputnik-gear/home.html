@@ -1,0 +1,1401 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+	<title>Home</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="css/vendors.min.css">
+	<link rel="stylesheet" href="css/style.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+	<div class="header__top">
+		<div class="header__container-top container">
+			<!--FIX========== Маленькое меню ==============-->
+			<div class="header__menu-small menu-small">
+				<nav class="menu-small__body">
+					<ul class="menu-small__list">
+						<li class="menu-small__item"><a href="#" target="_blank" class="menu-small__link active"><span class="menu-small__label">Головна</span></a></li>
+						<li class="menu-small__item">
+							<div class="menu-small__link"><span class="menu-small__label">Про товар</span><span class="menu-small__arrow ic-triangle"></span></div>
+							<div class="menu-small__dropdown dropdown-small">
+								<ul class="dropdown-small__sublist">
+									<li class="dropdown-small__subitem"><a href="#" target="_blank" class="dropdown-small__sublink">Фотогаларея</a></li>
+									<li class="dropdown-small__subitem"><a href="#" target="_blank" class="dropdown-small__sublink">Відеогалерея</a></li>
+									<li class="dropdown-small__subitem"><a href="#" target="_blank" class="dropdown-small__sublink">Ціни</a></li>
+								</ul>
+							</div>
+						</li>
+						<li class="menu-small__item"><a href="#" target="_blank" class="menu-small__link"><span class="menu-small__label">Як купити</span></a></li>
+						<li class="menu-small__item"><a href="#" target="_blank" class="menu-small__link"><span class="menu-small__label">Наша місія</span></a></li>
+						<li class="menu-small__item"><a href="#" target="_blank" class="menu-small__link"><span class="menu-small__label">Контакти</span></a></li>
+						<li class="menu-small__item"><a href="#" target="_blank" class="menu-small__link"><span class="menu-small__label">Блог</span></a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="header__right-top">
+				<!--FIX========== Адресс ==============-->
+				<div class="header__adress adress">
+					<a href="#" target="_blank" class="adress__link"><span class="adress__label">Адреса шоуруму</span><span class="ic-marker"></span></a>
+				</div>
+				<!--FIX========== Телефоны ==============-->
+				<div class="header__phone phone">
+					<div class="phone__top">
+						<a href="tel:380936884499" class="phone__link phone__link_top-gray">(093) 688-44-99<span class="ic-triangle"></span></a>
+					</div>
+					<div class="phone__body">
+						<ul class="phone__list">
+							<li class="phone__item">
+								<a href="tel:380676884499" class="phone__link phone__link_blue"><span class="ic-kyivstar"></span>(067) 688-44-99</a>
+							</li>
+							<li class="phone__item">
+								<a href="tel:380506884499" class="phone__link phone__link_red"><span class="ic-vodafone"></span>(050) 688-44-99</a>
+							</li>
+							<li class="phone__item">
+								<a href="tel:380446884499" class="phone__link phone__link_yellow"><span class="ic-phone"></span>(044) 688-44-99</a>
+							</li>
+							<li class="phone__item">
+								<a href="viber://chat?number" class="phone__link phone__link_purple"><span class="ic-viber"></span>Viber</a>
+							</li>
+							<li class="phone__item">
+								<a href="https://telegram.me" class="phone__link phone__link_lite-blue"><span class="ic-telegram"></span>Telegram</a>
+							</li>
+						</ul>
+
+					</div>
+				</div>
+				<!--FIX========== Соцсети ==============-->
+				<div class="header__soc soc">
+					<a href="#" class="soc__link ic-facebook"></a>
+					<a href="#" class="soc__link ic-instagram"></a>
+				</div>
+				<!--FIX========== Валюта ==============-->
+				<div class="header__currency currency">
+					<div class="currency__label">Валюта</div>
+					<div class="currency__dropdown">
+						<div class="currency__header">
+							<button type="button" class="currency__button ic-triangle">Uan</button>
+						</div>
+						<div class="currency__body">
+							<span class="currency__item not-visible label">Uan</span>
+							<span class="currency__item">USD</span>
+							<span class="currency__item">EU</span>
+						</div>
+					</div>
+				</div>
+				<!--FIX========== Язык ==============-->
+				<div class="header__lang lang">
+					<a href="#" class="lang__link active">ua</a>
+					<a href="#" class="lang__link">en</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="header__body">
+		<div class="header__container-middle container">
+			<!--FIX========== Кнопка випадающего меню ==============-->
+			<button class="ic-menu ic-burger"><span></span><span></span><span></span></button>
+			<!--FIX========== Логотип ==============-->
+			<a href="#" target="_blank" class="header__logo"><img src="img/header/logo.svg" alt="Лого"></a>
+			<a href="#" target="_blank" class="header__logo-mob"><img src="img/header/logo-mobile.svg" alt="Лого"></a>
+			<!-- FIX ========== Поиск ==============-->
+			<div class="header__search search">
+				<div class="search__buttons">
+					<button type="button" class="search__btn-open ic-search"></button>
+					<button form="form-search" type="reset" class="search__close ic-cloze"></button>
+				</div>
+				<div class="search__wrapper">
+					<div class="search__top">
+						<form id="form-search" class="search__form form-search" action="#">
+							<div class="form-search__line">
+								<input class="form-search__input input-search" type="search" placeholder="Пошук">
+								<button form="form-search" type="submit" class="form-search__button ic-search"></button>
+								<button type="button" class="form-search__icon ic-search"></button>
+								<button type="button" class="form-search__reset ic-cloze"></button>
+							</div>
+						</form>
+					</div>
+					<div class="search__drop drop-search">
+						<div class="drop-search__products">
+							<div class="drop-search__title">
+								<h3>Товари</h3>
+							</div>
+							<div class="drop-search__items-products">
+								<div class="drop-search__card search-card">
+									<a href="#" class="search-card__body">
+										<div class="search-card__img">
+											<img src="img/header/armor.png" alt="Зображення броніжелету">
+										</div>
+										<div class="search-card__right">
+											<div class="search-card__label">Чохол полегшеного бронежилету рейнджер</div>
+											<div class="search-card__prices prices">
+												<div class="prices__sale">-19%</div>
+												<div class="prices__price-old">490 грн</div>
+												<div class="prices__price">490 грн</div>
+											</div>
+										</div>
+									</a>
+								</div>
+								<div class="drop-search__card search-card">
+									<a href="#" class="search-card__body">
+										<div class="search-card__img">
+											<img src="img/header/armor.png" alt="Зображення броніжелету">
+										</div>
+										<div class="search-card__right">
+											<div class="search-card__label">Чохол полегшеного бронежилету рейнджер</div>
+											<div class="search-card__prices prices">
+												<div class="prices__sale">-19%</div>
+												<div class="prices__price-old">490 грн</div>
+												<div class="prices__price">490 грн</div>
+											</div>
+										</div>
+									</a>
+								</div>
+								<div class="drop-search__card search-card">
+									<a href="#" class="search-card__body">
+										<div class="search-card__img">
+											<img src="img/header/armor.png" alt="Зображення броніжелету">
+										</div>
+										<div class="search-card__right">
+											<div class="search-card__label">Чохол полегшеного бронежилету рейнджер</div>
+											<div class="search-card__prices prices">
+												<div class="prices__sale">-19%</div>
+												<div class="prices__price-old">490 грн</div>
+												<div class="prices__price">490 грн</div>
+											</div>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="drop-search__categories">
+							<div class="drop-search__title">
+								<h3>Категорії</h3>
+							</div>
+							<div class="drop-search__items-categories">
+								<a href="#" target="_blank" class="drop-search__link ic-arrow-small">Плитоноски</a>
+								<a href="#" target="_blank" class="drop-search__link ic-arrow-small">Бронежилети</a>
+								<a href="#" target="_blank" class="drop-search__link ic-arrow-small">EDC accessorize</a>
+							</div>
+						</div>
+						<div class="drop-search__news">
+							<div class="drop-search__title">
+								<h3>Новини</h3>
+							</div>
+							<div class="drop-search__items-news">
+								<div class="drop-search__item-new item-new">
+									<a href="#" target="_blank" class="item-new__body">
+										<div class="item-new__data">12.11.2022</div>
+										<div class="item-new__text">
+											<p>Зброя – найкращий друг будь-якого воїна, а його екіпірування – вірний супутник, який допомагає йому долати тягар маршу</p>
+										</div>
+									</a>
+								</div>
+								<div class="drop-search__item-new item-new">
+									<a href="#" target="_blank" class="item-new__body">
+										<div class="item-new__data">12.11.2022</div>
+										<div class="item-new__text">
+											<p>Наше завдання зробити так, щоб ваше спорядження було вашим надійним і вірним супутником, який не підведе в скрутну хвилину бою, і не буде доставляти незручність в повсякденному використанні.</p>
+										</div>
+									</a>
+								</div>
+								<div class="drop-search__item-new item-new">
+									<a href="#" target="_blank" class="item-new__body">
+										<div class="item-new__data">12.11.2022</div>
+										<div class="item-new__text">
+											<p>Ми знаємо, що потрібно нашим бійцям, бо ми спілкуємося з ними. Бойовий досвід українських воїнів знаходить втілення в дизайні бойової екіпіровки.</p>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--FIX========== Пользователь ==============-->
+			<div class="header__user user">
+				<div class="user__items">
+					<a href="#" target="_blank" class="user__link user__link_icon"><span class="user__icon ic-user"></span><span class="user__label">Вхід</span></a>
+					<span class="user__slash">/</span>
+					<a href="#" target="_blank" class="user__link"><span class="user__label">Реєстрація </span></a>
+				</div>
+			</div>
+			<!--FIX========== Избранные ==============-->
+			<div class="header__favorites favorites">
+				<a href="#" target="_blank" class="favorites__link ic-favorit"></a>
+			</div>
+			<!--FIX========== Корзина товаров ==============-->
+			<div class="header__cart cart">
+				<div class="cart__top">
+					<button class="cart__button" type="button">
+						<span class="cart__icon ic-cart"><span class="cart__num">12</span></span>
+						<div class="cart__value">960 грн</div>
+					</button>
+				</div>
+				<div class="cart__body">
+					<div class="cart__products">
+						<div class="cart__title">
+							<h3>Кошик</h3>
+						</div>
+						<div class="cart__items">
+							<div class="cart__card cart-card">
+								<div class="cart-card__body">
+									<div class="cart-card__img">
+										<img src="img/header/armor.png" alt="Зображення броніжелету">
+									</div>
+									<div class="cart-card__right">
+										<div class="cart-card__label">Чохол полегшеного бронежилету рейнджер</div>
+										<div class="cart-card__prices prices">
+											<div class="prices__sale">-19%</div>
+											<div class="prices__price-old">490 грн</div>
+											<div class="prices__price">490 грн</div>
+										</div>
+										<button class="cart-card__remove button link" type="button">Видалити</button>
+									</div>
+								</div>
+							</div>
+							<div class="cart__card cart-card">
+								<div class="cart-card__body">
+									<div class="cart-card__img">
+										<img src="img/header/armor.png" alt="Зображення броніжелету">
+									</div>
+									<div class="cart-card__right">
+										<div class="cart-card__label">Чохол полегшеного бронежилету рейнджер</div>
+										<div class="cart-card__prices prices">
+											<div class="prices__sale">-19%</div>
+											<div class="prices__price-old">490 грн</div>
+											<div class="prices__price">490 грн</div>
+										</div>
+										<button class="cart-card__remove button link" type="button">Видалити</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="cart__subtotal">
+							<div class="cart__item">Всього:</div>
+							<div class="cart__value-cart">980 грн</div>
+						</div>
+						<div class="cart__line">
+							<a href="#" target="_blank" class="button size-l w-100 yellow">Перейти до оформлення</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="header__bottom">
+		<div class="header__container-bottom container">
+			<!--FIX========== Большое меню ==============-->
+			<div class="header__menu menu">
+				<nav class="menu__body">
+					<ul class="menu__list">
+						<li class="menu__item">
+							<div class="menu__link"><span class="menu__label">Тактичне спорядження</span><span class="menu__arrow ic-triangle"></span></div>
+							<div class="menu__dropdown dropdown">
+								<ul class="dropdown__sublist" data-spollers="990,min" data-one-spoller>
+									<li class="dropdown__subitem"><a href="#" target="_blank" class="dropdown__sublink">РПС</a></li>
+									<li class="dropdown__subitem">
+										<div class="dropdown__sublink ic-triangle" data-spoller>Польове спорядження</div>
+										<ul class="dropdown__subsublist">
+											<li class="dropdown__subsubitem"><a href="#" target="_blank" class="dropdown__subsublink">Тактичні рукавички</a></li>
+											<li class="dropdown__subsubitem"><a href="#" target="_blank" class="dropdown__subsublink">Кемлбек</a></li>
+											<li class="dropdown__subsubitem"><a href="#" target="_blank" class="dropdown__subsublink">Наколінники</a></li>
+										</ul>
+									</li>
+									<li class="dropdown__subitem"><a href="#" target="_blank" class="dropdown__sublink">EDC та активний відпочинок</a></li>
+									<li class="dropdown__subitem"><a href="#" target="_blank" class="dropdown__sublink">Збройні ремені</a></li>
+								</ul>
+							</div>
+						</li>
+						<li class="menu__item"><a href="#" target="_blank" class="menu__link"><span class="menu__label">Бронежилети, плитоноски</span></a></li>
+						<li class="menu__item"><a href="#" target="_blank" class="menu__link"><span class="menu__label">Взуття</span></a></li>
+						<li class="menu__item"><a href="#" target="_blank" class="menu__link"><span class="menu__label">Рюкзаки </span></a></li>
+						<li class="menu__item">
+							<div class="menu__link"><span class="menu__label">Сумки</span><span class="menu__arrow ic-triangle"></span></div>
+							<div class="menu__dropdown dropdown">
+								<ul class="dropdown__sublist" data-spollers="990,min" data-one-spoller>
+									<li class="dropdown__subitem"><a href="#" target="_blank" class="dropdown__sublink">РПС</a></li>
+									<li class="dropdown__subitem">
+										<div class="dropdown__sublink ic-triangle" data-spoller>Польове спорядження</div>
+										<ul class="dropdown__subsublist">
+											<li class="dropdown__subsubitem"><a href="#" target="_blank" class="dropdown__subsublink">Тактичні рукавички</a></li>
+											<li class="dropdown__subsubitem"><a href="#" target="_blank" class="dropdown__subsublink">Кемлбек</a></li>
+											<li class="dropdown__subsubitem"><a href="#" target="_blank" class="dropdown__subsublink">Наколінники</a></li>
+										</ul>
+									</li>
+									<li class="dropdown__subitem"><a href="#" target="_blank" class="dropdown__sublink">EDC та активний відпочинок</a></li>
+									<li class="dropdown__subitem"><a href="#" target="_blank" class="dropdown__sublink">Збройні ремені</a></li>
+								</ul>
+							</div>
+						</li>
+						<li class="menu__item">
+							<div class="menu__link"><span class="menu__label">історична серія</span><span class="menu__arrow ic-triangle"></span></div>
+							<div class="menu__dropdown dropdown">
+								<ul class="dropdown__sublist" data-spollers="990,min" data-one-spoller>
+									<li class="dropdown__subitem"><a href="#" target="_blank" class="dropdown__sublink">РПС</a></li>
+									<li class="dropdown__subitem">
+										<div class="dropdown__sublink ic-triangle" data-spoller>Польове спорядження</div>
+										<ul class="dropdown__subsublist">
+											<li class="dropdown__subsubitem"><a href="#" target="_blank" class="dropdown__subsublink">Тактичні рукавички</a></li>
+											<li class="dropdown__subsubitem"><a href="#" target="_blank" class="dropdown__subsublink">Кемлбек</a></li>
+											<li class="dropdown__subsubitem"><a href="#" target="_blank" class="dropdown__subsublink">Наколінники</a></li>
+										</ul>
+									</li>
+									<li class="dropdown__subitem"><a href="#" target="_blank" class="dropdown__sublink">EDC та активний відпочинок</a></li>
+									<li class="dropdown__subitem"><a href="#" target="_blank" class="dropdown__sublink">Збройні ремені</a></li>
+								</ul>
+							</div>
+						</li>
+						<li class="menu__item">
+							<div class="menu__link"><span class="menu__label">ще</span><span class="menu__arrow ic-triangle"></span></div>
+							<div class="menu__dropdown dropdown">
+								<ul class="dropdown__sublist" data-spollers="990,min" data-one-spoller>
+									<li class="dropdown__subitem"><a href="#" target="_blank" class="dropdown__sublink">РПС</a></li>
+									<li class="dropdown__subitem">
+										<div class="dropdown__sublink ic-triangle" data-spoller>Польове спорядження</div>
+										<ul class="dropdown__subsublist">
+											<li class="dropdown__subsubitem"><a href="#" target="_blank" class="dropdown__subsublink">Тактичні рукавички</a></li>
+											<li class="dropdown__subsubitem"><a href="#" target="_blank" class="dropdown__subsublink">Кемлбек</a></li>
+											<li class="dropdown__subsubitem"><a href="#" target="_blank" class="dropdown__subsublink">Наколінники</a></li>
+										</ul>
+									</li>
+									<li class="dropdown__subitem"><a href="#" target="_blank" class="dropdown__sublink">EDC та активний відпочинок</a></li>
+									<li class="dropdown__subitem"><a href="#" target="_blank" class="dropdown__sublink">Збройні ремені</a></li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+
+	</div>
+	<!--FIX========== Мобильное меню и подменю ==============-->
+	<div class="mobile-menu-wrapper">
+		<nav class="header__mob-menu mob-menu">
+			<div class="mob-menu__top">
+				<div class="mob-menu__user user">
+					<div class="user__items">
+						<a href="#" target="_blank" class="user__link user__link_icon"><span class="user__icon ic-user"></span><span class="user__label">Вхід</span></a>
+						<span class="user__slash">/</span>
+						<a href="#" target="_blank" class="user__link"><span class="user__label">Реєстрація </span></a>
+					</div>
+				</div>
+				<button class="mob-menu__btn cloze ic-cloze" type="button"></button>
+			</div>
+			<div class="mob-menu__body">
+				<div class="mob-menu__row">
+					<div class="mob-menu__lang lang">
+						<a href="#" class="lang__link active">ua</a>
+						<a href="#" class="lang__link">en</a>
+					</div>
+					<div class="mob-menu__currency">
+						<a href="#" class="mob-menu__link-currency active">Uan</a>
+						<a href="#" class="mob-menu__link-currency">USD</a>
+						<a href="#" class="mob-menu__link-currency">EU</a>
+					</div>
+				</div>
+				<ul class="mob-menu__list">
+					<li class="mob-menu__item"><button type="button" class="mob-menu__btn-link link-btn ic-arrow">тактичне спорядження</button></li>
+					<li class="mob-menu__item"><button type="button" class="mob-menu__btn-link link-btn ic-arrow">Бронежилети, плитоноски</button></li>
+					<li class="mob-menu__item"><button type="button" class="mob-menu__btn-link link-btn ic-arrow">Взуття</button></li>
+					<li class="mob-menu__item"><button type="button" class="mob-menu__btn-link link-btn ic-arrow">Рюкзаки</button></li>
+					<li class="mob-menu__item"><button type="button" class="mob-menu__btn-link link-btn ic-arrow">Сумки</button></li>
+					<li class="mob-menu__item"><button type="button" class="mob-menu__btn-link link-btn ic-arrow">історична серія</button></li>
+				</ul>
+				<div class="mob-menu__items">
+					<a href="#" target="_blank" class="mob-menu__link ic-arrow-long">Головна</a>
+					<a href="#" target="_blank" class="mob-menu__link ic-arrow-long">Фотогаларея</a>
+					<a href="#" target="_blank" class="mob-menu__link ic-arrow-long">Відеогалерея</a>
+					<a href="#" target="_blank" class="mob-menu__link ic-arrow-long">Ціни</a>
+					<a href="#" target="_blank" class="mob-menu__link ic-arrow-long">Як купити</a>
+					<a href="#" target="_blank" class="mob-menu__link ic-arrow-long">Реєстрація</a>
+					<a href="#" target="_blank" class="mob-menu__link ic-arrow-long">Наша місія</a>
+					<a href="#" target="_blank" class="mob-menu__link ic-arrow-long">Контакти</a>
+					<a href="#" target="_blank" class="mob-menu__link ic-arrow-long">Блог</a>
+				</div>
+				<div class="mob-menu__wrap">
+					<div class="mob-menu__adress adress">
+						<a href="#" target="_blank" class="adress__link"><span class="adress__label">Адреса шоуруму</span><span class="ic-marker"></span></a>
+					</div>
+					<div class="mob-menu__phone phone">
+						<div class="phone__body">
+							<ul class="phone__list">
+								<li class="phone__item">
+									<a href="tel:380676884499" class="phone__link phone__link_blue"><span class="ic-kyivstar"></span>(067) 688-44-99</a>
+								</li>
+								<li class="phone__item">
+									<a href="tel:380506884499" class="phone__link phone__link_red"><span class="ic-vodafone"></span>(050) 688-44-99</a>
+								</li>
+								<li class="phone__item">
+									<a href="tel:380446884499" class="phone__link phone__link_yellow"><span class="ic-phone"></span>(044) 688-44-99</a>
+								</li>
+								<li class="phone__item">
+									<a href="viber://chat?number" class="phone__link phone__link_purple"><span class="ic-viber"></span>Viber</a>
+								</li>
+								<li class="phone__item">
+									<a href="https://telegram.me" class="phone__link phone__link_lite-blue"><span class="ic-telegram"></span>Telegram</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="mob-menu__footer">
+				<div class="mob-menu__soc soc">
+					<a href="#" class="soc__link ic-facebook"></a>
+					<a href="#" class="soc__link ic-instagram"></a>
+				</div>
+			</div>
+		</nav>
+		<nav class="header__mob-submenu mob-submenu">
+			<div class="mob-submenu__top">
+				<button class="mob-menu__btn-back back ic-arrow" type="button">Тактичне спорядження</button>
+				<button class="mob-menu__btn cloze ic-cloze" type="button"></button>
+			</div>
+			<div class="mob-submenu__body">
+				<ul class="mob-submenu__list">
+					<li class="mob-submenu__item"><a href="#" target="_blank" class="mob-submenu__btn-link link-btn">РПС</a></li>
+					<li class="mob-submenu__item"><button type="button" class="mob-submenu__btn-link link-btn ic-arrow">Польове спорядження</button></li>
+					<li class="mob-submenu__item"><a href="#" target="_blank" class="mob-submenu__btn-link link-btn">EDC та активний відпочинок</a></li>
+				</ul>
+			</div>
+		</nav>
+		<nav class="header__mob-submenu mob-submenu">
+			<div class="mob-submenu__top">
+				<button class="mob-menu__btn-back back ic-arrow" type="button">Тактичне спорядження</button>
+				<button class="mob-menu__btn cloze ic-cloze" type="button"></button>
+			</div>
+			<div class="mob-submenu__body">
+				<ul class="mob-submenu__list">
+					<li class="mob-submenu__item"><a href="#" target="_blank" class="mob-submenu__btn-link link-btn">Тактичні рукавички</a></li>
+					<li class="mob-submenu__item"><a href="#" target="_blank" class="mob-submenu__btn-link link-btn">Кемлбек</a></li>
+					<li class="mob-submenu__item"><a href="#" target="_blank" class="mob-submenu__btn-link link-btn">Наколінники</a></li>
+				</ul>
+			</div>
+		</nav>
+	</div>
+</header>
+		<main class="page">
+			<!--FIX =====================Banner==================== -->
+			<section class="banner">
+				<div class="banner__container container">
+					<div class="banner__body">
+						<div class="banner__slider slider-banner">
+							<div class="slider-banner__slide">
+								<div class="slider-banner__img ibg">
+									<img src="img/home/banner.jpg" alt="Баннер">
+								</div>
+							</div>
+							<div class="slider-banner__slide">
+								<div class="slider-banner__img ibg">
+									<img src="img/home/banner.jpg" alt="Баннер">
+								</div>
+							</div>
+							<div class="slider-banner__slide">
+								<div class="slider-banner__img ibg">
+									<img src="img/home/banner.jpg" alt="Баннер">
+								</div>
+							</div>
+							<div class="slider-banner__slide">
+								<div class="slider-banner__img ibg">
+									<img src="img/home/banner.jpg" alt="Баннер">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- =================================================== -->
+			<!--FIX =====================Popular slider==================== -->
+			<section class="popular">
+				<div class="popular__container container">
+					<div class="popular__body">
+						<div class="popular__title">
+							<h1>Магазин спорядження для озброєних професіоналів</h1>
+						</div>
+						<div class="popular__wrap">
+							<div class="popular__title title">
+								<h2>Популярні</h2>
+							</div>
+							<div class="popular__cards-slider cards-slider">
+								<div class="cards-slider__slide">
+									<div class="cards-slider__card card">
+										<div class="card__top">
+											<div class="card__row">
+												<div class="card__prices prices">
+													<div class="prices__sale">-19%</div>
+												</div>
+												<a href="#" target="_blank" class="card__favorit ic-favorit"></a>
+											</div>
+											<a href="#" target="_blank" class="card__img-link">
+												<img src="img/home/product-1.png" alt="Чохол полегшеного бронежилету рейнджер">
+											</a>
+										</div>
+										<div class="card__bottom">
+											<a href="#" target="_blank" class="card__name-link">Чохол полегшеного бронежилету рейнджер</a>
+											<div class="card__prices prices">
+												<div class="prices__price-old">490 грн</div>
+												<div class="prices__price">490 грн</div>
+											</div>
+											<button class="button size-c yellow ic-cart">В кошик</button>
+											<!-- <div class="card__stock stock ic-check">є в наявності</div> -->
+											<div class="card__stock stock_none ic-cloze">немає в наявності</div>
+											<div class="card__colors colors">
+												<div class="colors__label">4 кольори</div>
+												<div class="colors__items">
+													<button type="button" class="colors__button coyote"></button>
+													<button type="button" class="colors__button gray"></button>
+													<button type="button" class="colors__button img"><img src="img/home/color-ukrainian-pixel.png" alt="Колір ukrainian-pixel"></button>
+													<button type="button" class="colors__button img current"><img src="img/home/color-multicam.png" alt="Колір multicam"></button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="cards-slider__slide">
+									<div class="cards-slider__card card out-of-stock">
+										<div class="card__top">
+											<div class="card__row">
+												<div class="card__prices prices">
+													<div class="prices__sale">-19%</div>
+												</div>
+												<a href="#" target="_blank" class="card__favorit ic-favorit"></a>
+											</div>
+											<a href="#" target="_blank" class="card__img-link">
+												<img src="img/home/product-1.png" alt="Чохол полегшеного бронежилету рейнджер">
+											</a>
+										</div>
+										<div class="card__bottom">
+											<a href="#" target="_blank" class="card__name-link">Чохол полегшеного бронежилету рейнджер</a>
+											<div class="card__prices prices">
+												<div class="prices__price-old">490 грн</div>
+												<div class="prices__price">490 грн</div>
+											</div>
+											<!-- <div class="card__stock stock ic-check">є в наявності</div> -->
+											<div class="card__stock stock stock_none ic-cloze">немає в наявності</div>
+											<div class="card__colors colors">
+												<div class="colors__label">4 кольори</div>
+												<div class="colors__items">
+													<button type="button" class="colors__button coyote"></button>
+													<button type="button" class="colors__button gray"></button>
+													<button type="button" class="colors__button img"><img src="img/home/color-ukrainian-pixel.png" alt="Колір ukrainian-pixel"></button>
+													<button type="button" class="colors__button img current"><img src="img/home/color-multicam.png" alt="Колір multicam"></button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="cards-slider__slide">
+									<div class="cards-slider__card card">
+										<div class="card__top">
+											<div class="card__row">
+												<div class="card__prices prices">
+													<div class="prices__sale">-19%</div>
+												</div>
+												<a href="#" target="_blank" class="card__favorit ic-favorit-black"></a>
+											</div>
+											<a href="#" target="_blank" class="card__img-link">
+												<img src="img/home/product-1.png" alt="Чохол полегшеного бронежилету рейнджер">
+											</a>
+										</div>
+										<div class="card__bottom">
+											<a href="#" target="_blank" class="card__name-link">Чохол рейнджер</a>
+											<div class="card__prices prices">
+												<div class="prices__price-old">490 грн</div>
+												<div class="prices__price">490 грн</div>
+											</div>
+											<button class="button size-c yellow ic-cart">В кошик</button>
+											<!-- <div class="card__stock stock ic-check">є в наявності</div> -->
+											<div class="card__stock stock stock_none ic-cloze">немає в наявності</div>
+											<div class="card__colors colors">
+												<div class="colors__label">4 кольори</div>
+												<div class="colors__items">
+													<button type="button" class="colors__button coyote"></button>
+													<button type="button" class="colors__button gray"></button>
+													<button type="button" class="colors__button img"><img src="img/home/color-ukrainian-pixel.png" alt="Колір ukrainian-pixel"></button>
+													<button type="button" class="colors__button img current"><img src="img/home/color-multicam.png" alt="Колір multicam"></button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="cards-slider__slide">
+									<div class="cards-slider__card card">
+										<div class="card__top">
+											<div class="card__row">
+												<div class="card__prices prices">
+													<div class="prices__sale">-19%</div>
+												</div>
+												<a href="#" target="_blank" class="card__favorit ic-favorit"></a>
+											</div>
+											<a href="#" target="_blank" class="card__img-link">
+												<img src="img/home/product-1.png" alt="Чохол полегшеного бронежилету рейнджер">
+											</a>
+										</div>
+										<div class="card__bottom">
+											<a href="#" target="_blank" class="card__name-link">Чохол полегшеного бронежилету рейнджер</a>
+											<div class="card__prices prices">
+												<div class="prices__price-old">490 грн</div>
+												<div class="prices__price">490 грн</div>
+											</div>
+											<button class="button size-c yellow ic-cart">В кошик</button>
+											<!-- <div class="card__stock stock ic-check">є в наявності</div> -->
+											<div class="card__stock stock stock_none ic-cloze">немає в наявності</div>
+											<div class="card__colors colors">
+												<div class="colors__label">4 кольори</div>
+												<div class="colors__items">
+													<button type="button" class="colors__button coyote"></button>
+													<button type="button" class="colors__button gray"></button>
+													<button type="button" class="colors__button img"><img src="img/home/color-ukrainian-pixel.png" alt="Колір ukrainian-pixel"></button>
+													<button type="button" class="colors__button img current"><img src="img/home/color-multicam.png" alt="Колір multicam"></button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="cards-slider__slide">
+									<div class="cards-slider__card card">
+										<div class="card__top">
+											<div class="card__row">
+												<div class="card__prices prices">
+													<div class="prices__sale">-19%</div>
+												</div>
+												<a href="#" target="_blank" class="card__favorit ic-favorit"></a>
+											</div>
+											<a href="#" target="_blank" class="card__img-link">
+												<img src="img/home/product-1.png" alt="Чохол полегшеного бронежилету рейнджер">
+											</a>
+										</div>
+										<div class="card__bottom">
+											<a href="#" target="_blank" class="card__name-link">Чохол полегшеного бронежилету рейнджер</a>
+											<div class="card__prices prices">
+												<div class="prices__price-old">490 грн</div>
+												<div class="prices__price">490 грн</div>
+											</div>
+											<button class="button size-c yellow ic-cart">В кошик</button>
+											<!-- <div class="card__stock stock ic-check">є в наявності</div> -->
+											<div class="card__stock stock stock_none ic-cloze">немає в наявності</div>
+											<div class="card__colors colors">
+												<div class="colors__label">4 кольори</div>
+												<div class="colors__items">
+													<button type="button" class="colors__button coyote"></button>
+													<button type="button" class="colors__button gray"></button>
+													<button type="button" class="colors__button img"><img src="img/home/color-ukrainian-pixel.png" alt="Колір ukrainian-pixel"></button>
+													<button type="button" class="colors__button img current"><img src="img/home/color-multicam.png" alt="Колір multicam"></button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="cards-slider__slide">
+									<div class="cards-slider__card card">
+										<div class="card__top">
+											<div class="card__row">
+												<div class="card__prices prices">
+													<div class="prices__sale">-19%</div>
+												</div>
+												<a href="#" target="_blank" class="card__favorit ic-favorit"></a>
+											</div>
+											<a href="#" target="_blank" class="card__img-link">
+												<img src="img/home/product-1.png" alt="Чохол полегшеного бронежилету рейнджер">
+											</a>
+										</div>
+										<div class="card__bottom">
+											<a href="#" target="_blank" class="card__name-link">Чохол полегшеного бронежилету рейнджер</a>
+											<div class="card__prices prices">
+												<div class="prices__price-old">490 грн</div>
+												<div class="prices__price">490 грн</div>
+											</div>
+											<button class="button size-c yellow ic-cart">В кошик</button>
+											<!-- <div class="card__stock stock ic-check">є в наявності</div> -->
+											<div class="card__stock stock stock_none ic-cloze">немає в наявності</div>
+											<div class="card__colors colors">
+												<div class="colors__label">4 кольори</div>
+												<div class="colors__items">
+													<button type="button" class="colors__button coyote"></button>
+													<button type="button" class="colors__button gray"></button>
+													<button type="button" class="colors__button img"><img src="img/home/color-ukrainian-pixel.png" alt="Колір ukrainian-pixel"></button>
+													<button type="button" class="colors__button img current"><img src="img/home/color-multicam.png" alt="Колір multicam"></button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="cards-slider__slide">
+									<div class="cards-slider__card card">
+										<div class="card__top">
+											<div class="card__row">
+												<div class="card__prices prices">
+													<div class="prices__sale">-19%</div>
+												</div>
+												<a href="#" target="_blank" class="card__favorit ic-favorit"></a>
+											</div>
+											<a href="#" target="_blank" class="card__img-link">
+												<img src="img/home/product-1.png" alt="Чохол полегшеного бронежилету рейнджер">
+											</a>
+										</div>
+										<div class="card__bottom">
+											<a href="#" target="_blank" class="card__name-link">Чохол полегшеного бронежилету рейнджер</a>
+											<div class="card__prices prices">
+												<div class="prices__price-old">490 грн</div>
+												<div class="prices__price">490 грн</div>
+											</div>
+											<button class="button size-c yellow ic-cart">В кошик</button>
+											<!-- <div class="card__stock stock ic-check">є в наявності</div> -->
+											<div class="card__stock stock stock_none ic-cloze">немає в наявності</div>
+											<div class="card__colors colors">
+												<div class="colors__label">4 кольори</div>
+												<div class="colors__items">
+													<button type="button" class="colors__button coyote"></button>
+													<button type="button" class="colors__button gray"></button>
+													<button type="button" class="colors__button img"><img src="img/home/color-ukrainian-pixel.png" alt="Колір ukrainian-pixel"></button>
+													<button type="button" class="colors__button img current"><img src="img/home/color-multicam.png" alt="Колір multicam"></button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="cards-slider__slide">
+									<div class="cards-slider__card card">
+										<div class="card__top">
+											<div class="card__row">
+												<div class="card__prices prices">
+													<div class="prices__sale">-19%</div>
+												</div>
+												<a href="#" target="_blank" class="card__favorit ic-favorit"></a>
+											</div>
+											<a href="#" target="_blank" class="card__img-link">
+												<img src="img/home/product-1.png" alt="Чохол полегшеного бронежилету рейнджер">
+											</a>
+										</div>
+										<div class="card__bottom">
+											<a href="#" target="_blank" class="card__name-link">Чохол полегшеного бронежилету рейнджер</a>
+											<div class="card__prices prices">
+												<div class="prices__price-old">490 грн</div>
+												<div class="prices__price">490 грн</div>
+											</div>
+											<button class="button size-c yellow ic-cart">В кошик</button>
+											<!-- <div class="card__stock stock ic-check">є в наявності</div> -->
+											<div class="card__stock stock stock_none ic-cloze">немає в наявності</div>
+											<div class="card__colors colors">
+												<div class="colors__label">4 кольори</div>
+												<div class="colors__items">
+													<button type="button" class="colors__button coyote"></button>
+													<button type="button" class="colors__button gray"></button>
+													<button type="button" class="colors__button img"><img src="img/home/color-ukrainian-pixel.png" alt="Колір ukrainian-pixel"></button>
+													<button type="button" class="colors__button img current"><img src="img/home/color-multicam.png" alt="Колір multicam"></button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="cards-slider__slide">
+									<div class="cards-slider__card card">
+										<div class="card__top">
+											<div class="card__row">
+												<div class="card__prices prices">
+													<div class="prices__sale">-19%</div>
+												</div>
+												<a href="#" target="_blank" class="card__favorit ic-favorit"></a>
+											</div>
+											<a href="#" target="_blank" class="card__img-link">
+												<img src="img/home/product-1.png" alt="Чохол полегшеного бронежилету рейнджер">
+											</a>
+										</div>
+										<div class="card__bottom">
+											<a href="#" target="_blank" class="card__name-link">Чохол полегшеного бронежилету рейнджер</a>
+											<div class="card__prices prices">
+												<div class="prices__price-old">490 грн</div>
+												<div class="prices__price">490 грн</div>
+											</div>
+											<button class="button size-c yellow ic-cart">В кошик</button>
+											<!-- <div class="card__stock stock ic-check">є в наявності</div> -->
+											<div class="card__stock stock stock_none ic-cloze">немає в наявності</div>
+											<div class="card__colors colors">
+												<div class="colors__label">4 кольори</div>
+												<div class="colors__items">
+													<button type="button" class="colors__button coyote"></button>
+													<button type="button" class="colors__button gray"></button>
+													<button type="button" class="colors__button img"><img src="img/home/color-ukrainian-pixel.png" alt="Колір ukrainian-pixel"></button>
+													<button type="button" class="colors__button img current"><img src="img/home/color-multicam.png" alt="Колір multicam"></button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- =================================================== -->
+			<!--FIX =====================Kategories==================== -->
+			<section class="kategories">
+				<div class="kategories__container container">
+					<div class="kategories__title title">
+						<h2>Категорії</h2>
+					</div>
+					<div class="kategories__body">
+						<div class="kategories__card-kat card-kat">
+							<a href="#" target="_blank" class="card-kat__body">
+								<div class="card-kat__img">
+									<img src="img/home/cat-1.png" alt="Зображення каски">
+								</div>
+								<div class="card-kat__name">Шоломи<span class="ic-arrow"></span></div>
+							</a>
+						</div>
+						<div class="kategories__card-kat card-kat">
+							<a href="#" target="_blank" class="card-kat__body">
+								<div class="card-kat__img">
+									<img src="img/home/cat-2.png" alt="Зображення аксесуарів">
+								</div>
+								<div class="card-kat__name">Аксесуари<span class="ic-arrow"></span></div>
+							</a>
+						</div>
+						<div class="kategories__card-kat card-kat">
+							<a href="#" target="_blank" class="card-kat__body">
+								<div class="card-kat__img">
+									<img src="img/home/cat-3.png" alt="Зображення плитоноски">
+								</div>
+								<div class="card-kat__name">Плитоноски<span class="ic-arrow"></span></div>
+							</a>
+						</div>
+						<div class="kategories__card-kat card-kat">
+							<a href="#" target="_blank" class="card-kat__body">
+								<div class="card-kat__img">
+									<img src="img/home/cat-4.png" alt="Зображення підсумки для гвинтівок">
+								</div>
+								<div class="card-kat__name">Підсумки для гвинтівок<span class="ic-arrow"></span></div>
+							</a>
+						</div>
+						<div class="kategories__card-kat card-kat">
+							<a href="#" target="_blank" class="card-kat__body">
+								<div class="card-kat__img">
+									<img src="img/home/cat-5.png" alt="Зображення підсумки для гранат">
+								</div>
+								<div class="card-kat__name">Підсумки для гранат<span class="ic-arrow"></span></div>
+							</a>
+						</div>
+						<div class="kategories__card-kat card-kat">
+							<a href="#" target="_blank" class="card-kat__body">
+								<div class="card-kat__img">
+									<img src="img/home/cat-6.png" alt="Зображення медичні підсумки">
+								</div>
+								<div class="card-kat__name">Медичні підсумки<span class="ic-arrow"></span></div>
+							</a>
+						</div>
+						<div class="kategories__card-kat card-kat">
+							<a href="#" target="_blank" class="card-kat__body">
+								<div class="card-kat__img">
+									<img src="img/home/cat-7.png" alt="Зображення плит">
+								</div>
+								<div class="card-kat__name">Плити<span class="ic-arrow"></span></div>
+							</a>
+						</div>
+						<div class="kategories__card-kat card-kat">
+							<a href="#" target="_blank" class="card-kat__body">
+								<div class="card-kat__img">
+									<img src="img/home/cat-8.png" alt="Зображення полегшених плит">
+								</div>
+								<div class="card-kat__name">Полегшені плити<span class="ic-arrow"></span></div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- =================================================== -->
+			<!--FIX =====================Popular ==================== -->
+			<section class="popular">
+				<div class="popular__container container">
+					<div class="popular__body">
+						<div class="popular__title title">
+							<h2>Популярні</h2>
+						</div>
+						<div class="popular__grid">
+							<div class="cards-slider__card card">
+								<div class="card__top">
+									<div class="card__row">
+										<div class="card__prices prices">
+											<div class="prices__sale">-19%</div>
+										</div>
+										<a href="#" target="_blank" class="card__favorit ic-favorit"></a>
+									</div>
+									<a href="#" target="_blank" class="card__img-link">
+										<img src="img/home/product-1.png" alt="Чохол полегшеного бронежилету рейнджер">
+									</a>
+								</div>
+								<div class="card__bottom">
+									<a href="#" target="_blank" class="card__name-link">Чохол полегшеного бронежилету рейнджерЧохол полегшеного бронежилету рейнджер</a>
+									<div class="card__prices prices">
+										<div class="prices__price-old">490 грн</div>
+										<div class="prices__price">490 грн</div>
+									</div>
+									<button class="button size-c yellow ic-cart">В кошик</button>
+									<!-- <div class="card__stock stock ic-check">є в наявності</div> -->
+									<div class="card__stock stock stock_none ic-cloze">немає в наявності</div>
+									<div class="card__colors colors">
+										<div class="colors__label">4 кольори</div>
+										<div class="colors__items">
+											<button type="button" class="colors__button coyote"></button>
+											<button type="button" class="colors__button gray"></button>
+											<button type="button" class="colors__button img"><img src="img/home/color-ukrainian-pixel.png" alt="Колір ukrainian-pixel"></button>
+											<button type="button" class="colors__button img current"><img src="img/home/color-multicam.png" alt="Колір multicam"></button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="cards-slider__card card">
+								<div class="card__top">
+									<div class="card__row">
+										<div class="card__prices prices">
+											<div class="prices__sale">-19%</div>
+										</div>
+										<a href="#" target="_blank" class="card__favorit ic-favorit"></a>
+									</div>
+									<a href="#" target="_blank" class="card__img-link">
+										<img src="img/home/product-1.png" alt="Чохол полегшеного бронежилету рейнджер">
+									</a>
+								</div>
+								<div class="card__bottom">
+									<a href="#" target="_blank" class="card__name-link">Чохол полегшеного бронежилету рейнджер</a>
+									<div class="card__prices prices">
+										<div class="prices__price-old">490 грн</div>
+										<div class="prices__price">490 грн</div>
+									</div>
+									<button class="button size-c yellow ic-cart">В кошик</button>
+									<!-- <div class="card__stock stock ic-check">є в наявності</div> -->
+									<div class="card__stock stock stock_none ic-cloze">немає в наявності</div>
+									<div class="card__colors colors">
+										<div class="colors__label">4 кольори</div>
+										<div class="colors__items">
+											<button type="button" class="colors__button coyote"></button>
+											<button type="button" class="colors__button gray"></button>
+											<button type="button" class="colors__button img"><img src="img/home/color-ukrainian-pixel.png" alt="Колір ukrainian-pixel"></button>
+											<button type="button" class="colors__button img current"><img src="img/home/color-multicam.png" alt="Колір multicam"></button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="cards-slider__card card">
+								<div class="card__top">
+									<div class="card__row">
+										<div class="card__prices prices">
+											<div class="prices__sale">-19%</div>
+										</div>
+										<a href="#" target="_blank" class="card__favorit ic-favorit"></a>
+									</div>
+									<a href="#" target="_blank" class="card__img-link">
+										<img src="img/home/product-1.png" alt="Чохол полегшеного бронежилету рейнджер">
+									</a>
+								</div>
+								<div class="card__bottom">
+									<a href="#" target="_blank" class="card__name-link">Чохол полегшеного бронежилету рейнджер</a>
+									<div class="card__prices prices">
+										<div class="prices__price-old">490 грн</div>
+										<div class="prices__price">490 грн</div>
+									</div>
+									<button class="button size-c yellow ic-cart">В кошик</button>
+									<!-- <div class="card__stock stock ic-check">є в наявності</div> -->
+									<div class="card__stock stock stock_none ic-cloze">немає в наявності</div>
+									<div class="card__colors colors">
+										<div class="colors__label">4 кольори</div>
+										<div class="colors__items">
+											<button type="button" class="colors__button coyote"></button>
+											<button type="button" class="colors__button gray"></button>
+											<button type="button" class="colors__button img"><img src="img/home/color-ukrainian-pixel.png" alt="Колір ukrainian-pixel"></button>
+											<button type="button" class="colors__button img current"><img src="img/home/color-multicam.png" alt="Колір multicam"></button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="cards-slider__card card">
+								<div class="card__top">
+									<div class="card__row">
+										<div class="card__prices prices">
+											<div class="prices__sale">-19%</div>
+										</div>
+										<a href="#" target="_blank" class="card__favorit ic-favorit"></a>
+									</div>
+									<a href="#" target="_blank" class="card__img-link">
+										<img src="img/home/product-1.png" alt="Чохол полегшеного бронежилету рейнджер">
+									</a>
+								</div>
+								<div class="card__bottom">
+									<a href="#" target="_blank" class="card__name-link">Чохол полегшеного бронежилету рейнджер</a>
+									<div class="card__prices prices">
+										<div class="prices__price-old">490 грн</div>
+										<div class="prices__price">490 грн</div>
+									</div>
+									<button class="button size-c yellow ic-cart">В кошик</button>
+									<!-- <div class="card__stock stock ic-check">є в наявності</div> -->
+									<div class="card__stock stock stock_none ic-cloze">немає в наявності</div>
+									<div class="card__colors colors">
+										<div class="colors__label">4 кольори</div>
+										<div class="colors__items">
+											<button type="button" class="colors__button coyote"></button>
+											<button type="button" class="colors__button gray"></button>
+											<button type="button" class="colors__button img"><img src="img/home/color-ukrainian-pixel.png" alt="Колір ukrainian-pixel"></button>
+											<button type="button" class="colors__button img current"><img src="img/home/color-multicam.png" alt="Колір multicam"></button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="cards-slider__card card">
+								<div class="card__top">
+									<div class="card__row">
+										<div class="card__prices prices">
+											<div class="prices__sale">-19%</div>
+										</div>
+										<a href="#" target="_blank" class="card__favorit ic-favorit"></a>
+									</div>
+									<a href="#" target="_blank" class="card__img-link">
+										<img src="img/home/product-1.png" alt="Чохол полегшеного бронежилету рейнджер">
+									</a>
+								</div>
+								<div class="card__bottom">
+									<a href="#" target="_blank" class="card__name-link">Чохол полегшеного бронежилету рейнджер</a>
+									<div class="card__prices prices">
+										<div class="prices__price-old">490 грн</div>
+										<div class="prices__price">490 грн</div>
+									</div>
+									<button class="button size-c yellow ic-cart">В кошик</button>
+									<!-- <div class="card__stock stock ic-check">є в наявності</div> -->
+									<div class="card__stock stock stock_none ic-cloze">немає в наявності</div>
+									<div class="card__colors colors">
+										<div class="colors__label">4 кольори</div>
+										<div class="colors__items">
+											<button type="button" class="colors__button coyote"></button>
+											<button type="button" class="colors__button gray"></button>
+											<button type="button" class="colors__button img"><img src="img/home/color-ukrainian-pixel.png" alt="Колір ukrainian-pixel"></button>
+											<button type="button" class="colors__button img current"><img src="img/home/color-multicam.png" alt="Колір multicam"></button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="cards-slider__card card">
+								<div class="card__top">
+									<div class="card__row">
+										<div class="card__prices prices">
+											<div class="prices__sale">-19%</div>
+										</div>
+										<a href="#" target="_blank" class="card__favorit ic-favorit"></a>
+									</div>
+									<a href="#" target="_blank" class="card__img-link">
+										<img src="img/home/product-1.png" alt="Чохол полегшеного бронежилету рейнджер">
+									</a>
+								</div>
+								<div class="card__bottom">
+									<a href="#" target="_blank" class="card__name-link">Чохол полегшеного бронежилету рейнджер</a>
+									<div class="card__prices prices">
+										<div class="prices__price-old">490 грн</div>
+										<div class="prices__price">490 грн</div>
+									</div>
+									<button class="button size-c yellow ic-cart">В кошик</button>
+									<!-- <div class="card__stock stock ic-check">є в наявності</div> -->
+									<div class="card__stock stock stock_none ic-cloze">немає в наявності</div>
+									<div class="card__colors colors">
+										<div class="colors__label">4 кольори</div>
+										<div class="colors__items">
+											<button type="button" class="colors__button coyote"></button>
+											<button type="button" class="colors__button gray"></button>
+											<button type="button" class="colors__button img"><img src="img/home/color-ukrainian-pixel.png" alt="Колір ukrainian-pixel"></button>
+											<button type="button" class="colors__button img current"><img src="img/home/color-multicam.png" alt="Колір multicam"></button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="cards-slider__card card">
+								<div class="card__top">
+									<div class="card__row">
+										<div class="card__prices prices">
+											<div class="prices__sale">-19%</div>
+										</div>
+										<a href="#" target="_blank" class="card__favorit ic-favorit"></a>
+									</div>
+									<a href="#" target="_blank" class="card__img-link">
+										<img src="img/home/product-1.png" alt="Чохол полегшеного бронежилету рейнджер">
+									</a>
+								</div>
+								<div class="card__bottom">
+									<a href="#" target="_blank" class="card__name-link">Чохол полегшеного бронежилету рейнджер</a>
+									<div class="card__prices prices">
+										<div class="prices__price-old">490 грн</div>
+										<div class="prices__price">490 грн</div>
+									</div>
+									<button class="button size-c yellow ic-cart">В кошик</button>
+									<!-- <div class="card__stock stock ic-check">є в наявності</div> -->
+									<div class="card__stock stock stock_none ic-cloze">немає в наявності</div>
+									<div class="card__colors colors">
+										<div class="colors__label">4 кольори</div>
+										<div class="colors__items">
+											<button type="button" class="colors__button coyote"></button>
+											<button type="button" class="colors__button gray"></button>
+											<button type="button" class="colors__button img"><img src="img/home/color-ukrainian-pixel.png" alt="Колір ukrainian-pixel"></button>
+											<button type="button" class="colors__button img current"><img src="img/home/color-multicam.png" alt="Колір multicam"></button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="cards-slider__card card">
+								<div class="card__top">
+									<div class="card__row">
+										<div class="card__prices prices">
+											<div class="prices__sale">-19%</div>
+										</div>
+										<a href="#" target="_blank" class="card__favorit ic-favorit"></a>
+									</div>
+									<a href="#" target="_blank" class="card__img-link">
+										<img src="img/home/product-1.png" alt="Чохол полегшеного бронежилету рейнджер">
+									</a>
+								</div>
+								<div class="card__bottom">
+									<a href="#" target="_blank" class="card__name-link">Чохол полегшеного бронежилету рейнджер</a>
+									<div class="card__prices prices">
+										<div class="prices__price-old">490 грн</div>
+										<div class="prices__price">490 грн</div>
+									</div>
+									<button class="button size-c yellow ic-cart">В кошик</button>
+									<!-- <div class="card__stock stock ic-check">є в наявності</div> -->
+									<div class="card__stock stock stock_none ic-cloze">немає в наявності</div>
+									<div class="card__colors colors">
+										<div class="colors__label">4 кольори</div>
+										<div class="colors__items">
+											<button type="button" class="colors__button coyote"></button>
+											<button type="button" class="colors__button gray"></button>
+											<button type="button" class="colors__button img"><img src="img/home/color-ukrainian-pixel.png" alt="Колір ukrainian-pixel"></button>
+											<button type="button" class="colors__button img current"><img src="img/home/color-multicam.png" alt="Колір multicam"></button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="cards-slider__card card">
+								<div class="card__top">
+									<div class="card__row">
+										<div class="card__prices prices">
+											<div class="prices__sale">-19%</div>
+										</div>
+										<a href="#" target="_blank" class="card__favorit ic-favorit"></a>
+									</div>
+									<a href="#" target="_blank" class="card__img-link">
+										<img src="img/home/product-1.png" alt="Чохол полегшеного бронежилету рейнджер">
+									</a>
+								</div>
+								<div class="card__bottom">
+									<a href="#" target="_blank" class="card__name-link">Чохол полегшеного бронежилету рейнджер</a>
+									<div class="card__prices prices">
+										<div class="prices__price-old">490 грн</div>
+										<div class="prices__price">490 грн</div>
+									</div>
+									<button class="button size-c yellow ic-cart">В кошик</button>
+									<!-- <div class="card__stock stock ic-check">є в наявності</div> -->
+									<div class="card__stock stock stock_none ic-cloze">немає в наявності</div>
+									<div class="card__colors colors">
+										<div class="colors__label">4 кольори</div>
+										<div class="colors__items">
+											<button type="button" class="colors__button coyote"></button>
+											<button type="button" class="colors__button gray"></button>
+											<button type="button" class="colors__button img"><img src="img/home/color-ukrainian-pixel.png" alt="Колір ukrainian-pixel"></button>
+											<button type="button" class="colors__button img current"><img src="img/home/color-multicam.png" alt="Колір multicam"></button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="cards-slider__card card">
+								<div class="card__top">
+									<div class="card__row">
+										<div class="card__prices prices">
+											<div class="prices__sale">-19%</div>
+										</div>
+										<a href="#" target="_blank" class="card__favorit ic-favorit"></a>
+									</div>
+									<a href="#" target="_blank" class="card__img-link">
+										<img src="img/home/product-1.png" alt="Чохол полегшеного бронежилету рейнджер">
+									</a>
+								</div>
+								<div class="card__bottom">
+									<a href="#" target="_blank" class="card__name-link">Чохол полегшеного бронежилету рейнджер</a>
+									<div class="card__prices prices">
+										<div class="prices__price-old">490 грн</div>
+										<div class="prices__price">490 грн</div>
+									</div>
+									<button class="button size-c yellow ic-cart">В кошик</button>
+									<!-- <div class="card__stock stock ic-check">є в наявності</div> -->
+									<div class="card__stock stock stock_none ic-cloze">немає в наявності</div>
+									<div class="card__colors colors">
+										<div class="colors__label">4 кольори</div>
+										<div class="colors__items">
+											<button type="button" class="colors__button coyote"></button>
+											<button type="button" class="colors__button gray"></button>
+											<button type="button" class="colors__button img"><img src="img/home/color-ukrainian-pixel.png" alt="Колір ukrainian-pixel"></button>
+											<button type="button" class="colors__button img current"><img src="img/home/color-multicam.png" alt="Колір multicam"></button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="cards-slider__card card">
+								<div class="card__top">
+									<div class="card__row">
+										<div class="card__prices prices">
+											<div class="prices__sale">-19%</div>
+										</div>
+										<a href="#" target="_blank" class="card__favorit ic-favorit"></a>
+									</div>
+									<a href="#" target="_blank" class="card__img-link">
+										<img src="img/home/product-1.png" alt="Чохол полегшеного бронежилету рейнджер">
+									</a>
+								</div>
+								<div class="card__bottom">
+									<a href="#" target="_blank" class="card__name-link">Чохол полегшеного бронежилету рейнджер</a>
+									<div class="card__prices prices">
+										<div class="prices__price-old">490 грн</div>
+										<div class="prices__price">490 грн</div>
+									</div>
+									<button class="button size-c yellow ic-cart">В кошик</button>
+									<!-- <div class="card__stock stock ic-check">є в наявності</div> -->
+									<div class="card__stock stock stock_none ic-cloze">немає в наявності</div>
+									<div class="card__colors colors">
+										<div class="colors__label">4 кольори</div>
+										<div class="colors__items">
+											<button type="button" class="colors__button coyote"></button>
+											<button type="button" class="colors__button gray"></button>
+											<button type="button" class="colors__button img"><img src="img/home/color-ukrainian-pixel.png" alt="Колір ukrainian-pixel"></button>
+											<button type="button" class="colors__button img current"><img src="img/home/color-multicam.png" alt="Колір multicam"></button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="cards-slider__card card">
+								<div class="card__top">
+									<div class="card__row">
+										<div class="card__prices prices">
+											<div class="prices__sale">-19%</div>
+										</div>
+										<a href="#" target="_blank" class="card__favorit ic-favorit"></a>
+									</div>
+									<a href="#" target="_blank" class="card__img-link">
+										<img src="img/home/product-1.png" alt="Чохол полегшеного бронежилету рейнджер">
+									</a>
+								</div>
+								<div class="card__bottom">
+									<a href="#" target="_blank" class="card__name-link">Чохол полегшеного бронежилету рейнджер</a>
+									<div class="card__prices prices">
+										<div class="prices__price-old">490 грн</div>
+										<div class="prices__price">490 грн</div>
+									</div>
+									<button class="button size-c yellow ic-cart">В кошик</button>
+									<!-- <div class="card__stock stock ic-check">є в наявності</div> -->
+									<div class="card__stock stock stock_none ic-cloze">немає в наявності</div>
+									<div class="card__colors colors">
+										<div class="colors__label">4 кольори</div>
+										<div class="colors__items">
+											<button type="button" class="colors__button coyote"></button>
+											<button type="button" class="colors__button gray"></button>
+											<button type="button" class="colors__button img"><img src="img/home/color-ukrainian-pixel.png" alt="Колір ukrainian-pixel"></button>
+											<button type="button" class="colors__button img current"><img src="img/home/color-multicam.png" alt="Колір multicam"></button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!--FIX =====================SEO text ==================== -->
+			<section class="constructor">
+				<div class="constructor__container container">
+					<div class="constructor__body">
+						<div class="text--editor small--size">
+							<h2>СЕО заголовок</h2>
+							<p>Це слова видатного перського поета Омара Хайяма. Великому мудрецю був знайомий життєвий сенс: віра в Бога, любов до всього прекрасного та вино. Алкоголь з давніх-давен грав у нашому житті особливу роль: він бадьорив, давав енергію, безстрашність або навпаки. знімав стрес, хвилювання та втому. Елітний алкоголь займав в аристократичному житті людей не останні місця, оскільки дегустаційні тонкощі поряд зі смаковою насолодою перетворювалися на певний ритуал високих верств суспільства.</p>
+							<p>Купити віскі, текілу, шампанське чи вино не означатиме прилучення до касти «любителів» високих градусів і уявного безстрашності. Насамперед, елітні спиртні напої це прерогатива естетів-гурманів, які не п'ють напій, а дегустують, смакують його, розширюють смакову палітру та найтоншу ароматну гаму.</p>
+							<p>Наш магазин елітного алкоголю проведе вас незвіданими стежками до світу, де панують напої вищого рівня з усією різноманітністю смакового багатства, створеного руками визнаних виноробів.</p>
+							<p>Вам залишилося лише зробити вибір та купити елітний алкоголь, ціна якого доступна кожному шанувальнику високих стандартів. І не важливо, в якому регіоні нашої країни ви знаходитесь – оперативність доставки ще одна обов'язкова умова нашої співпраці.</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- =================================================== -->
+		</main>
+		<footer class="footer">
+	<div class="footer__container container">
+		<div class="footer__body">
+			<div class="footer__left">
+				<div class="footer__logo"><a href="#" target="_blank"><img src="img/footer/logo-sputnik-gear.svg" alt="Логотип"></a></div>
+				<div class="footer__row">
+					<div class="footer__label">Долучайтесь у соцмережах</div>
+					<div class="footer__links social">
+						<a href="#" target="_blank" class="ic-facebook"></a>
+						<a href="#" target="_blank" class="ic-instagram"></a>
+					</div>
+				</div>
+			</div>
+			<div class="footer__right">
+				<ul class="footer__list">
+					<li class="footer__item">
+						<span class="footer__span">Про компанію</span>
+						<ul class="footer__sublist">
+							<li class="footer__subitem"><a href="#" target="_blank" class="footer__sublink">Наша місія</a></li>
+							<li class="footer__subitem"><a href="#" target="_blank" class="footer__sublink">Блог</a></li>
+							<li class="footer__subitem"><a href="#" target="_blank" class="footer__sublink">Контакти</a></li>
+							<li class="footer__subitem"><a href="#" target="_blank" class="footer__sublink">Умови використання</a></li>
+							<li class="footer__subitem"><a href="#" target="_blank" class="footer__sublink">Політика конфіденційності</a></li>
+						</ul>
+					</li>
+					<li class="footer__item">
+						<span class="footer__span">Про товар</span>
+						<ul class="footer__sublist">
+							<li class="footer__subitem"><a href="#" target="_blank" class="footer__sublink">Фотогаларея</a></li>
+							<li class="footer__subitem"><a href="#" target="_blank" class="footer__sublink">Відеогалерея</a></li>
+							<li class="footer__subitem"><a href="#" target="_blank" class="footer__sublink">Ціни</a></li>
+						</ul>
+					</li>
+					<li class="footer__item">
+						<span class="footer__span">Споживачу</span>
+						<ul class="footer__sublist">
+							<li class="footer__subitem"><a href="#" target="_blank" class="footer__sublink">Як купити</a></li>
+							<li class="footer__subitem"><a href="#" target="_blank" class="footer__sublink">Новини</a></li>
+							<li class="footer__subitem"><a href="#" target="_blank" class="footer__sublink">Особистий кабінет</a></li>
+							<li class="footer__subitem"><a href="#" target="_blank" class="footer__sublink">Каталог</a></li>
+						</ul>
+					</li>
+					<li class="footer__item">
+						<span class="footer__span">🔥Не пропустіть горячі пропозиції!</span>
+						<ul class="footer__sublist">
+							<li class="footer__subitem"><a href="#" target="_blank" class="footer__sublink">Підписуйтесь на новини та дізнавайтеся про найгорячіші пропозиції першими</a></li>
+						</ul>
+						<form action="#" id="form-email" class="footer__form form-email" method="POST" novalidate="novalidate">
+							<div class="form-email__line">
+								<input id="email" class="form-email__input input" type="email" name="Email" placeholder="Введіть Ваш Email">
+								<button form="form-email" class="form-email__button button-form-min"><span class="ic-arrow-long"></span></button>
+							</div>
+						</form>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="footer__bottom">
+		<div class="footer__container container">
+			<div class="footer__line">
+				<div class="footer__wrap">
+					<div class="footer__lang lang">
+						<a href="#" class="lang__link active">ua</a>
+						<a href="#" class="lang__link">en</a>
+					</div>
+					<div class="footer__text">Company name copyrirht © 2022</div>
+				</div>
+				<div class="footer__text-icon">Created by <span class="ic-owl"></span></div>
+			</div>
+		</div>
+	</div>
+</footer>
+	</div>
+	<script src="js/vendors.min.js"></script>
+<script src="js/app.min.js"></script>
+</body>
+
+</html>

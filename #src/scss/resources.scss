@@ -1,0 +1,124 @@
+//Подключение шрифта
+@mixin font($font_name, $file_name, $weight, $style) {
+	@font-face {
+		font-family: $font_name;
+		font-display: swap;
+		src: url("../fonts/#{$file_name}.woff2") format("woff2"),
+		url("../fonts/#{$file_name}.woff") format("woff");
+		font-weight: #{$weight};
+		font-style: #{$style};
+	}
+}
+
+//Адаптивное свойство
+@mixin adaptiv-value($property, $startSize, $minSize, $type) {
+	$addSize: $startSize - $minSize;
+
+	@if $type==1 {
+		//Только если меньше контейнера
+		#{$property}: $startSize + px;
+
+		@media (max-width: #{$maxWidthContainer + px}) {
+			#{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidthContainer - 320}));
+		}
+	}
+
+	@else if $type==2 {
+		//Только если больше контейнера
+		#{$property}: $startSize + px;
+
+		@media (min-width: #{$maxWidthContainer + px}) {
+			#{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth - 320}));
+		}
+	}
+
+	@else {
+		//Всегда
+		#{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth - 320}));
+	}
+}
+
+//Адаптивное свойство до
+@mixin adaptiv-value-to($property, $startSize, $minSize, $minWidth) {
+	$addSize: $startSize - $minSize;
+
+	//#{$property}: $minSize + px;
+	@media (min-width: #{$minWidth + px}) {
+		#{$property}: calc(#{$minSize + px} + #{$addSize} * (((100vw - #{$minWidth + px})) / ((#{$maxWidth - $minWidth}))));
+	}
+}
+
+//<Шрифт по умолчанию>================================================
+$fontFamily: "Inter";
+$fontSize: 16;
+//</Шрифт по умолчанию>==============================================
+
+//</ШРИФТЫ>==========================================================
+
+//<ПЕРЕМЕННЫЕ>========================================================
+$minWidth: 320px;
+$maxWidth: 1440;
+$maxWidthContainer: 1200;
+$md1: 1277.98;
+$md2: 990.98;
+$md3: 767.98;
+$md4: 567.98;
+
+$dark: #1D1D1F;
+$dark-01: #2D2D30;
+$white: #FFFFFF;
+$special-black: #222222;
+$special-gray-01: #2C2C2C;
+$special-gray-02: #363636;
+$special-gray-03: #434343;
+$special-gray-04: #454545;
+
+
+$light-00: #BCBCC5;
+$light-01: #6E6E73;
+$light-02: #D2D2D7;
+$light-04: #6E6E73;
+
+$gray-light-01: #E1E1E4;
+$gray-light-00: #F5F5F7;
+$gray-light-02 : #D2D2D7;
+$gray-light-03: #B8B8BF;
+$gray-ligth-04: #6E6E73;
+$gray-dark-01: #2D2D30;
+$gray-dark-00: #1D1D1F;
+
+
+$coyot-light: #E0B787;
+$coyote: #BD966D;
+$coyot-dark: #95836D;
+
+$error-on-light : #BF4800;
+$error-on-dark: #B46A3D;
+
+$emphasis-blue: #0D99FF;
+$emphasis-yellow: #FCB500;
+$emphasis-yellow-hover: #FCA600;
+$text-link: #197FCC;
+
+$green-on-light: #51944F;
+
+
+//</ПЕРЕМЕННЫЕ>======================================================
+//====================Шаблоны кода===================================
+%pad-100 {
+	padding: 100px 0;
+
+	@media (max-width:($md2+px)) {
+		padding: 80px 0;
+	}
+}
+
+%hover {
+	transition: color 0.3s ease-out 0s;
+
+	@media (any-hover:hover) {
+		&:hover {
+			color: $coyot-light;
+		}
+	}
+}

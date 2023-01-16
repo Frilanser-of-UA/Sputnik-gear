@@ -1,0 +1,306 @@
+.colors {
+	padding: 21px 0 11px 0;
+	position: relative;
+
+	// .colors__label
+
+	&__label {
+		font-size: 12px;
+		line-height: 100%;
+		color: $light-01;
+	}
+
+	// .colors__items
+
+	&__items {
+		display: flex;
+		position: absolute;
+		top: 21px;
+		left: 0;
+		background-color: $white;
+		width: 100%;
+		pointer-events: none;
+		visibility: hidden;
+		opacity: 0;
+		transition: all 0.3s ease-out 0s;
+
+		@media (max-width:($md3+px)) {
+			opacity: 1;
+			visibility: visible;
+			pointer-events: auto;
+		}
+	}
+
+	// .colors__item
+
+	&__item {
+		position: relative;
+
+		&:not(:last-child) {
+			margin: 0px 5px 0px 0px;
+		}
+	}
+
+	span {
+		position: absolute;
+		top: -18px;
+		left: 0;
+		font-size: 14px;
+		line-height: 130%;
+		color: $light-01;
+		display: none;
+	}
+
+	// .colors__button
+
+	&__button {
+		width: 24px;
+		height: 24px;
+		flex: 0 0 24px;
+		overflow: hidden;
+		position: relative;
+		transition: border-width 0.2s ease-in-out 0s;
+		border: 1px solid transparent;
+
+		@media (any-hover:hover) {
+			&:hover {
+				&::before {
+					width: 22px;
+					height: 22px;
+				}
+			}
+		}
+
+		&::before {
+			content: '';
+			width: 20px;
+			height: 20px;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			transition: all 0.3s ease 0s;
+		}
+
+		&.coyote {
+			&::before {
+				background: #C9A67F;
+				border: 0.7px solid #A78158;
+			}
+
+			&.current {
+				border-color: #A78158;
+			}
+		}
+
+		&.black {
+			&::before {
+				background: #000000;
+			}
+
+			border: 1px solid #000000;
+
+			&.current {
+				border-color: #000000;
+			}
+		}
+
+		&.white {
+			&::before {
+				background: $white;
+				border: 0.7px solid #E6E6E6;
+			}
+
+			&.current {
+				border-color: #E6E6E6;
+			}
+		}
+
+		&.gray {
+			&::before {
+				background: #E2E2E2;
+				border: 0.7px solid #D6D6D6;
+			}
+
+			&.current {
+				border-color: #D6D6D6;
+			}
+		}
+
+		&.ranger-green {
+			&::before {
+				background: #666662;
+				border: 0.7px solid #56564E;
+			}
+
+			&.current {
+				border-color: #56564E;
+			}
+		}
+
+		&.olive {
+			&::before {
+				background: #7D7B5A;
+				border: 0.7px solid #757655;
+			}
+
+			&.current {
+				border-color: #757655;
+			}
+		}
+
+		&.brown {
+			&::before {
+				content: '';
+				background: #876030;
+				border: 0.7px solid #674721;
+			}
+
+			&.current {
+				border-color: #674721;
+			}
+		}
+
+		&.img {
+			img {
+				display: block;
+				width: 20px;
+				height: 20px;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				transition: all 0.3s ease 0s;
+			}
+
+			@media (any-hover:hover) {
+				&:hover {
+					img {
+						width: 24px;
+						height: 24px;
+					}
+				}
+			}
+
+		}
+
+		&.round {
+			border-radius: 50%;
+
+			&::before {
+				border-radius: 50%;
+			}
+		}
+
+		&.current {
+			&.img {
+				border-color: #7C7067;
+
+				@media (any-hover:hover) {
+					&:hover {
+						img {
+							width: 16px;
+							height: 16px;
+						}
+
+						&::before {
+							width: 16px;
+							height: 16px;
+						}
+					}
+				}
+
+				img {
+					width: 16px;
+					height: 16px;
+				}
+			}
+
+			&+span {
+				display: block;
+			}
+
+			&::before {
+				width: 16px;
+				height: 16px;
+			}
+
+			@media (any-hover:hover) {
+				&:hover {
+					border-width: 1px;
+				}
+			}
+		}
+	}
+
+	// .colors_large
+
+	&_large {
+		padding: 0px 0 20px 0;
+
+		.colors__items {
+			position: static;
+			visibility: visible;
+			opacity: 1;
+			pointer-events: auto;
+			padding: 20px 0px 0px 0px;
+		}
+
+		.colors__button {
+			width: 40px;
+			height: 40px;
+			flex: 0 0 40px;
+
+			@media (any-hover:hover) {
+				&:hover {
+					&::before {
+						width: 40px;
+						height: 40px;
+					}
+				}
+			}
+
+			&::before {
+				width: 36px;
+				height: 36px;
+			}
+
+			&.img {
+				img {
+					width: 36px;
+					height: 36px;
+				}
+
+				@media (any-hover:hover) {
+					&:hover {
+						img {
+							width: 40px;
+							height: 40px;
+						}
+					}
+				}
+			}
+
+			&.current {
+				&::before {
+					height: 28px;
+					width: 28px;
+				}
+
+				&.img {
+					img {
+						width: 28px;
+						height: 28px;
+
+						@media (any-hover:hover) {
+							&:hover {
+								width: 28px;
+								height: 28px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

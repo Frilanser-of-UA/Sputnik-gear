@@ -1,0 +1,177 @@
+.header {
+
+	// .header__top
+
+	&__top {
+		background-color: $special-gray-01;
+		height: 33px;
+
+		@media (max-width:($md1+px)) {
+			display: none;
+		}
+	}
+
+	// .header__container-top
+
+	&__container-top {
+		display: flex;
+		border-left: 1px solid $special-gray-03;
+		border-right: 1px solid $special-gray-03;
+		justify-content: space-between;
+		align-items: center;
+		height: 100%;
+	}
+
+	// .header__container-middle
+
+	&__container-middle {
+		display: flex;
+		align-items: center;
+		height: 100%;
+	}
+
+	// .header__container-bottom
+
+	&__container-bottom {
+		border-left: 1px solid $special-gray-03;
+		border-right: 1px solid $special-gray-03;
+	}
+
+	// .header__menu-small
+
+	&__menu-small {}
+
+	// .header__right-top
+
+	&__right-top {
+		margin: 0px 0px 0px 20px;
+		display: flex;
+		align-items: center;
+		height: 100%;
+
+		@media (max-width:($md2+px)) {
+			margin: 0;
+		}
+	}
+
+	// .header__adress
+
+	&__adress {}
+
+	// .header__phone
+
+	&__phone {}
+
+	// .header__social
+
+	&__social {}
+
+	// .header__currency
+
+	&__currency {}
+
+	// .header__lang
+
+	&__lang {}
+
+	// .header__body
+
+	&__body {
+		height: 85px;
+		background-color: $special-black;
+
+		@media (max-width:($md1+px)) {
+			height: 60px;
+		}
+	}
+
+	// .header__logo
+
+	&__logo {
+		flex: 0 0 214px;
+		margin: 0px 20px 0px 0px;
+
+		@media (max-width:($md1+px)) {
+			flex: 0 0 177px;
+		}
+
+		@media (max-width:($md4+px)) {
+			display: none;
+		}
+
+		img {
+			width: 100%;
+			display: block
+		}
+	}
+
+	// .header__logo-mob
+	&__logo-mob {
+		display: none;
+
+		@media (max-width:($md4+px)) {
+			flex: 0 0 35.5px;
+			display: block;
+		}
+
+		img {
+			width: 100%;
+			display: block
+		}
+	}
+
+	// .header__search
+
+	&__search {}
+
+	// .header__user
+
+	&__user {}
+
+	// .header__favorites
+
+	&__favorites {}
+
+	// .header__cart
+
+	&__cart {}
+
+	// .header__bottom
+
+	&__bottom {
+		background-color: $special-gray-02;
+
+		@media (max-width:($md1+px)) {
+			display: none;
+		}
+	}
+
+	// .header__menu
+
+	&__menu {}
+}
+
+@import "components/header/menu-small";
+@import "components/header/right-top";
+@import "components/header/search";
+@import "components/header/user";
+@import "components/header/favorites";
+@import "components/header/cart";
+@import "components/header/menu-big";
+@import "components/header/mob-menu";
+
+
+.ic-menu {
+	display: none;
+
+	@media (max-width: ($md1+px)) {
+		display: block;
+		color: $gray-light-02;
+		font-size: 32px;
+		margin: 0px 20px 0px 0px;
+	}
+
+	@media (max-width:($md2+px)) {
+		margin: 0px 15px 0px 0px;
+	}
+}

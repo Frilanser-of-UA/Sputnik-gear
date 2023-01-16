@@ -1,0 +1,157 @@
+//<INPUT (inp+tab)>====================================================================================================
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+input[type='search']::-webkit-search-decoration,
+input[type='search']::-webkit-search-cancel-button,
+input[type='search']::-webkit-search-results-button,
+input[type='search']::-webkit-search-results-decoration {
+	display: none;
+}
+
+// FIX input Для поиска
+.input-search {
+	&::-ms-clear {
+		width: 0;
+		height: 0;
+	}
+
+	width: 100%;
+	display: block;
+	background-color: $special-black;
+	padding: 10px;
+	padding-left: 42px;
+	padding-right: 42px;
+	border: 1px solid $special-black;
+	border-bottom-color: $special-gray-02;
+	outline: none;
+	color: $coyot-light;
+	cursor: pointer;
+	transition: all 0.3s ease-out 0s;
+	caret-color: $light-02;
+
+	@media (max-width:($md2+px)) {
+		padding-top: 15px;
+		padding-bottom: 12px;
+		caret-color: $text-link;
+		background-color: $white;
+		color: $dark;
+		border: none;
+		border-bottom: 1px solid $gray-light-01;
+	}
+
+	@media (any-hover:hover) {
+		&:hover {
+			background: $special-gray-01;
+			border: 1px solid $special-gray-02;
+
+			@media (max-width:($md2+px)) {
+				background: $white;
+			}
+		}
+	}
+
+	&:focus {
+		border-color: $coyote;
+		background: $special-gray-01;
+		border-bottom-color: $special-gray-02;
+		padding-left: 10px;
+
+		@media (max-width:($md2+px)) {
+			background: $white;
+		}
+
+		@media (any-hover:hover) {
+			&:hover {
+				border-color: $coyote;
+				background: $special-gray-01;
+				border-bottom-color: $special-gray-02;
+
+				@media (max-width:($md2+px)) {
+					background: $white;
+					border-color: $gray-light-01;
+				}
+			}
+		}
+
+		&::placeholder {
+			font-size: 0;
+		}
+	}
+
+	&::placeholder {
+		font-size: 16px;
+		color: $light-01;
+		transition: color 0.3s ease-out 0s;
+
+		@media (max-width:($md2+px)) {
+			color: #98989C;
+		}
+	}
+}
+
+.input {
+	width: 100%;
+	display: block;
+	padding: 10px;
+	height: 50px;
+	background-color: $special-gray-02;
+	border: 1px solid $special-gray-02;
+	outline: none;
+	color: $light-00;
+	cursor: pointer;
+	transition: all 0.3s ease-out 0s;
+	caret-color: $white;
+
+	@media (any-hover:hover) {
+		&:hover {
+			border-color: $special-gray-03;
+		}
+	}
+
+	&:focus {
+		border-color: $special-gray-03;
+	}
+
+	&::placeholder {
+		font-size: 14px;
+		color: $light-01;
+		transition: color 0.3s ease-out 0s;
+	}
+
+	&.error {
+		caret-color: $error-on-dark;
+		border-color: $error-on-dark;
+
+		@media (any-hover:hover) {
+			&:hover {
+				&::placeholder {
+					color: $error-on-dark;
+				}
+			}
+		}
+
+		&:focus {
+			&::placeholder {
+				color: $error-on-dark;
+			}
+		}
+
+		&::placeholder {
+			color: $error-on-dark;
+		}
+	}
+}
+
+textarea.input {
+	resize: none;
+	height: 132px;
+}
+
+//</INPUT>====================================================================================================
